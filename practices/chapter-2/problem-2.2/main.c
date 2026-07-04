@@ -1,3 +1,16 @@
+/*
+n           2^n(d)          2^n(x)
+9_          512_            0x200_
+19_         524288          0x80000
+14          16384_          0x4000
+16          65536           0x10000_
+17_         131072          0x20000
+5           32_             0x20
+7           128             0x80_
+
+check using the below code:
+*/
+
 #include <stdio.h>
 #include <math.h>
 
@@ -9,37 +22,8 @@ int int_pow(int base, int exponent) {
     return res;
 }
 
-/*
-from/to:
-    'n' = n
-    'd' = 2^n (decimal)
-    'x' = 2^n (hexadecimal)
-*/
-int convert(int x, char from, char to) {
-    if (from == 'n') { x = int_pow(2, x); }
-
-
-    int res;
-    if (from == 'x' && ((to == 'n') || (to == 'd'))) {
-        // convert from hex to decimal representation of hex
-        res =
-    }
-
-    printf("%d\n", int_pow(2, x));
-    // if (from == 'n') { x =  }
-
-    // if (from == 'n') {
-    //     if (to == 'd') {
-    //         printf("")
-    //     }
-    // }
-}
-
 int main() {
-    char from, to;
-    int x;
-    printf("from: "); scanf(" %c", &from);
-    printf("to  : "); scanf(" %c", &to);
-    printf("x   : "); scanf(" %i", &x);
-    convert(x, from, to);
+    int x = 14;
+    int two_to_x = int_pow(2, x);
+    printf("%d\n%d\n%x\n", x, two_to_x, two_to_x);
 }

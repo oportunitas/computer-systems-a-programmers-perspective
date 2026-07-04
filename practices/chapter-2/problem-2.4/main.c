@@ -1,0 +1,17 @@
+/*
+    A.  0x503C + 0x8    = 0x5044
+    B.  0x503C - 0x40   = 0x4FFC
+    C.  0x503C + 64     = 
+        0x503C + 0x40   = 0x507C
+    D.  0x50EA - 0x503C = 0xAE
+
+    check using below code
+*/
+
+#include <stdio.h>
+
+int main() {
+    int x = 0x50EA - 0x503C;
+    printf("%x\n", x);
+    return 0;   
+}

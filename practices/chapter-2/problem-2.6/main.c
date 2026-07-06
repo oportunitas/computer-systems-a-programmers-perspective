@@ -67,8 +67,6 @@ Walkthrough:
 
 #include <stdio.h>
 
-typedef unsigned _BitInt(2)* twobit_pointer;
-
 typedef unsigned char* byte_pointer;
 
 void show_bytes(byte_pointer start, size_t len) {

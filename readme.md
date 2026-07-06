@@ -33,3 +33,11 @@ The convention of defining bytes as a pair of hexadecimal numbers kind of makes 
 ...in a sense that you cant map every permutation of any number of binary digits to any number of decimal digits *(10 is not a whole number power of 2).* representing an entire byte with a base-256 notation would be the most compact but would be way too unintuitive (at least imo, what symbols would you even need, there's only so many keys in a keyboard, and we would go to represent some numbers with _imo_ weird characters for numbers, like emojis or kanji),...
 
 ... so representing 8 bits via a pair of 4 bit-representation through a single hexadecimal digit sounds like the perfect middle ground (some letters are involved, but its generally still intuitive how a-b-c-d-e-f order represents increasing value). and im pretty sure that its probably is the actual reason behind the convention.
+
+## @p56 (2.1.7 complete)
+
+> mon 6 jul 2026
+
+problem 2.13 was a mindtwister, which interacted with unique ways to circumvent boolean algebra in machines that dont have it as simple as what C gives. imo this problem is very good to issue for barunastra recruitment, as it touches on intricate boolean algebra, which is essential for mission planning and decisioning, in a way that is way better than the current problemset 
+
+_(fyi & tl:dr: barunastra programming recruitment requires coding some c/c++ problems without any internet, i think problem 2.13 is great for this, alongside problem 2.12 as well)._

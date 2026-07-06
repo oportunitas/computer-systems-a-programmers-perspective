@@ -2,7 +2,7 @@
 	.text
 	.section	.rodata.str1.1,"aMS",@progbits,1
 .LC0:
-	.string	"%.8b"
+	.string	"%.2x "
 	.text
 	.globl	show_bytes
 	.type	show_bytes, @function
@@ -15,9 +15,7 @@ show_bytes:
 	movl	$0, %ebx
 	jmp	.L2
 .L3:
-	movq	%rbp, %rdx
-	subq	%rax, %rdx
-	movzbl	-1(%r12,%rdx), %edx
+	movzbl	(%r12,%rax), %edx
 	movl	$.LC0, %esi
 	movl	$2, %edi
 	movl	$0, %eax
@@ -93,12 +91,17 @@ test_show_bytes:
 .L14:
 	call	__stack_chk_fail
 	.size	test_show_bytes, .-test_show_bytes
+	.section	.rodata.str1.1
+.LC1:
+	.string	"12345"
+	.text
 	.globl	main
 	.type	main, @function
 main:
 	subq	$8, %rsp
-	movl	$12345, %edi
-	call	test_show_bytes
+	movl	$6, %esi
+	movl	$.LC1, %edi
+	call	show_bytes
 	movl	$0, %eax
 	addq	$8, %rsp
 	ret

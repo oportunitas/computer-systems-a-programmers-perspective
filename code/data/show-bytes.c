@@ -4,7 +4,7 @@ typedef unsigned char* byte_pointer;
 
 void show_bytes(byte_pointer start, size_t len) {
     for (int i = 0; i < len; i++) {
-        printf("%.8b", start[len - i - 1]);
+        printf("%.2x ", start[i]);
     }
     printf("\n");
 }
@@ -33,7 +33,9 @@ void test_show_bytes(int val) {
 }
 
 int main() {
-    int val = 12345;
-    test_show_bytes(val);
+    // int val = 12345;
+    // test_show_bytes(val);
+
+    show_bytes("12345", 6);
     return 0;
 }

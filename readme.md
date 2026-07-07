@@ -47,3 +47,23 @@ _(fyi & tl:dr: barunastra programming recruitment requires coding some c/c++ pro
 > tue 7 jul 2026
 
 this part was very easy to go through (shifting) since its one of the essentials in the "dasar pemrograman/programming fundamentals" course in semester 1 of cs its. nice refresh though
+
+## @p67 (aside: more on fized integer types)
+
+> tue 7 jul 2026
+
+til: using iso c99 standard integer types and using macros in inttypes.h to print integers
+
+```c
+#include <stdio.h>
+#include <inttypes.h>
+
+int main() {
+    int32_t x = -15;
+    uint64_t y = 12;
+
+    // printf("%32b\n%32b\n", x, y);
+    printf("x = %" PRId32 ", y = %" PRIu64 "\n", x, y);
+    return 0;
+}
+```

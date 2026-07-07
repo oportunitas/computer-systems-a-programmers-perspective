@@ -38,6 +38,12 @@ The convention of defining bytes as a pair of hexadecimal numbers kind of makes 
 
 > mon 6 jul 2026
 
-problem 2.13 was a mindtwister, which interacted with unique ways to circumvent boolean algebra in machines that dont have it as simple as what C gives. imo this problem is very good to issue for barunastra recruitment, as it touches on intricate boolean algebra, which is essential for mission planning and decisioning, in a way that is way better than the current problemset 
+problem 2.13 was a mindtwister, which interacted with unique ways to circumvent boolean algebra in machines that dont have it as simple as what C gives. imo this problem is very good to issue for barunastra recruitment, as it touches on intricate boolean algebra, which is essential for mission planning and decisioning, in a way that is way better than the current problemset
 
 _(fyi & tl:dr: barunastra programming recruitment requires coding some c/c++ problems without any internet, i think problem 2.13 is great for this, alongside problem 2.12 as well)._
+
+## @p59 (2.1 complete)
+
+> tue 7 jul 2026
+
+this part was very easy to go through (shifting) since its one of the essentials in the "dasar pemrograman/programming fundamentals" course in semester 1 of cs its. nice refresh though

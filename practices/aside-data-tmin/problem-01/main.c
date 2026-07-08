@@ -46,6 +46,7 @@ answer/workthrough:
     long            unsigned        long        unsigned
     unsigned        long            long long   long
     unsigned long   unsigned long               unsigned long
+                                                long long
                                                 unsigned long long
 */                              
 

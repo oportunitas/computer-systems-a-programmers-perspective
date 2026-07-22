@@ -67,3 +67,13 @@ int main() {
     return 0;
 }
 ```
+
+## @p83 (2.2 complete)
+
+> wed 22 jul 2026
+
+after some 2-week hiatus from home moving, i continued reading this book today (22 jul 2026)
+
+one thing worth noting down: turns out `size_t` is defined in stdio.h to be unsigned (i never noticed this since i never bothered to care beforehand, but its nice to know it now). this results in some interesting cases in which (as is explored through practice problem 2.26):
+
+`strlen(s) - strlen(t) > 0` expression is unreliable. in cases which the evaluation should result in a negative number, since strlen's return value is unsigned (`size_t`), the left hand of the expression evaluates to a very big number due to unsigned integer underflow, which evaluates the entire expression to `1`. we should instead set the expression as `strlen(s) > strlen(t)` to get a reliable result.
